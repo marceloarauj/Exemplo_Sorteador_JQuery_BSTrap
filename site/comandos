@@ -1,0 +1,39 @@
+//EXEMPLO DE ADIÇÃO DINAMICA COM JQUERY
+
+$(document).ready(
+
+    function(){
+
+
+        $("#novo").click(function (e) {
+            $("#lista").append('<input id="blend" type="checkbox" class="crc">');
+            $('#lista').append('<label for="blend">BLEND (Garguilho)</label>');
+
+            $("#lista").append('</br><input id="mix"  type="checkbox" class="crc">');
+            $('#lista').append('<label for="mix">RT Nerfado(MixRT)</label>');
+
+            $("#lista").append('</br><input id="ryu"  type="checkbox" class="crc">');
+            $('#lista').append('<label for="ryu">Sr.Bonitinho(Hiruzen)</label></br>');
+
+            $("#sortear").remove();
+            $("#lista").append('<input id="sortear" class="btn-success" type="button" value="SORTEAR">');
+
+        });
+
+        $(document).on("click","#sortear",function (e) {
+            var elements = $("#lista .crc").length;
+            alert(elements);
+        });
+
+    });
+
+//ADICAO DE LINHAS NA TABELA DENTRO DO <tbody>
+
+                    <tr>
+                        <th scope="row">Exemplo</th>
+                        <td>dd/mm/yyyy</td>
+                    </tr>
+
+//QUANTIDADE DE ELEMENTOS NO FORM
+var elements = $("#lista .crc").length;
+            alert(elements);

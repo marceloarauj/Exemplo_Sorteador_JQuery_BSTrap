@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+</head>
+    <meta charset="UTF-8">
+    <title>SORTEADOR ALPHA PVE</title>
+
+    <script type ="text/javascript" src="jquery3.4.0.min.js"></script>
+    <link rel ="stylesheet" href ="estilo.css">
+    <script type ="text/javascript" src="funcoes.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, inicial-scale = 1, shrink-to-fit = no">
+
+</head>
+
+<body>
+        <div id="interface">
+            <header id="cabecalho">
+
+
+                <h2><p>Experimento de Sorteador</p></h2>
+                <h1><p><b>ALPHA PVE</b></p></h1>
+
+
+                <form id="logs">
+                    <label for="login">Login:</label>
+                    <input id="login" type="text">
+
+                    <label for="password">Senha:</label>
+                    <input id="password" type="password">
+
+                    <input id="novo" class="btn-dark" type="button" value="CONFIRMAR"/>
+
+                </form>
+
+
+            </header>
+
+            <div id="cadastro" class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Cadastrar</button>
+                </div>
+                <input id="novo-participante" type="text" maxlength="20" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <div id="resultado" class="bg-dark">
+                <table id="vencedores" class="table table-dark table-hover">
+                    <thead>
+                    <th scope="col">Vencedor</th>
+                    <th scope="col">Data</th>
+                    </thead>
+
+                    <tbody id="corpo-tabela">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="corpo">
+                    <div id="participantes" class="border border-dark">
+                        <span id="spant" class="badge-pill badge-dark">Participantes</span>
+
+                        <form id="lista">
+
+                        </form>
+                        <input id="sortear" class="btn-dark" type="button" value="SORTEAR">
+                    </div>
+            </div>
+
+        </div>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

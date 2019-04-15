@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+header#cabecalho{
+    box-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    background-color: mediumpurple;
+    position:fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 9;
+
+}
+header#cabecalho input{
+    box-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+header#cabecalho form#logs{
+    position: absolute;
+    left: 750px;
+    top: 59px;
+}
+body{
+    overflow-x: hidden;
+
+}
+
+form#lista{
+    margin-top:30px;
+    text-align: left;
+}
+
+div#corpo{
+    position:relative;
+    top:200px;
+    left: 300px;
+    margin-left: 500px;
+    margin-right: 500px ;
+    width: 700px;
+
+}
+div#participantes{
+    display: inline-block;
+    padding:9px;
+    text-align: center;
+    border-radius: 10px;
+}
+span#spant{
+    position: relative;
+}
+
+table#vencedores{
+    width: 500px;
+}
+div#resultado{
+    position: fixed;
+    margin-top: 200px;
+    margin-left:200px;
+    overflow: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+input#sortear{
+    margin-top: 10px;
+    position: relative;
+}
+div#cadastro{
+    width:100%;
+    height: 55px;
+    position:absolute;
+    top:100px;
+
+}
+button#button-addon1{
+    position:relative;
+    height:70%;
+}
+input{
+    border-radius: 8px;
+}
+p{
+    font-family: "Droid Sans";
+}
